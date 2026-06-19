@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Lumus Systems symbol light</title>
+  <desc id="desc">Símbolo geométrico de Lumus Systems con L estructural y nodo operativo.</desc>
+  <rect width="512" height="512" rx="96" fill="#F4F1E8"/>
+  <path d="M137 118H202V318H342V381H137V118Z" fill="#111418"/>
+  <rect x="202" y="318" width="74" height="63" fill="#D6A84F"/>
+  <rect x="276" y="318" width="66" height="63" fill="#1F6F6B"/>
+  <path d="M202 318H342" stroke="#F4F1E8" stroke-opacity="0.34" stroke-width="2"/>
+  <circle cx="374" cy="151" r="16" fill="#D6A84F"/>
+  <path d="M326 151H358" stroke="#D6A84F" stroke-width="10" stroke-linecap="round"/>
+</svg>
