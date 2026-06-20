@@ -85,11 +85,11 @@
   <nav class="nav" aria-label="Navegación principal">
     <div class="wrap nav-inner">
       <a class="brand" href="#contenido" aria-label="Lumus Systems">
-        <img class="brand-logo" src="assets/lumus-logo-v5-light.svg" alt="Lumus Systems">
+        <img class="brand-logo" src="assets/lumus-logo-ui.svg" width="1040" height="216" alt="Lumus Systems">
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
-        <span class="sr-only">Abrir menú</span>
+        <span class="sr-only menu-label">Abrir menú</span>
       </button>
       <div class="nav-links" id="nav-menu">
         <a href="#problema">Problema</a>
@@ -108,39 +108,73 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="desktop-copy">Consultoría de automatización operativa e IA práctica</span><span class="mobile-copy">Automatización operativa e IA práctica</span></p>
-          <h1>Sistemas inteligentes, automatización e IA práctica para operar mejor.</h1>
-          <p class="lead">Ayudamos a empresas B2B a ordenar procesos, detectar oportunidades reales de automatización y construir sistemas mantenibles con IA solo cuando aporta valor.</p>
+          <h1>Convierte procesos dispersos en sistemas que avanzan solos.</h1>
+          <p class="lead">Lumus diseña automatizaciones, asistentes privados y paneles operativos a partir del trabajo real: entradas, decisiones, responsables, permisos y métricas.</p>
           <div class="actions">
             <a class="btn primary" href="#contacto">Solicitar revisión operativa</a>
             <a class="btn secondary" href="#metodo">Ver cómo trabajamos</a>
           </div>
+          <div class="proof-row" aria-label="Entregables Lumus">
+            <span>Mapa operativo</span>
+            <span>Matriz de oportunidades</span>
+            <span>Primer sprint</span>
+          </div>
           <p class="micro">Primero revisamos si hay una oportunidad real. Después recomendamos mapa, diagnóstico, piloto o no actuar todavía según claridad, impacto y riesgo.</p>
         </div>
-        <aside class="hero-system" aria-label="Simulación de un mapa operativo Lumus">
+        <aside class="hero-system" aria-label="Simulación de una consola operativa Lumus">
           <div class="system-top">
             <div>
-              <span>Mapa operativo</span>
-              <strong>Diagnóstico · priorización · primer sprint</strong>
+              <span>Consola operativa</span>
+              <strong>Entrada · decisión · sistema · medición</strong>
             </div>
-            <p class="live-chip"><i></i> Analizando flujo</p>
+            <p class="live-chip"><i></i> Flujo en revisión</p>
           </div>
-          <div class="flow-board">
-            <div class="flow-card">
-              <b>Entrada</b>
-              <span>CRM, email, hojas y conversaciones dispersas.</span>
-              <em></em>
+          <div class="system-brand" aria-hidden="true">
+            <img src="assets/lumus-symbol-v5-light.svg" width="512" height="512" alt="">
+            <span>Lumus transforma señales dispersas en trabajo trazable</span>
+          </div>
+          <div class="ops-console">
+            <div class="ops-sidebar" aria-hidden="true">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <i class="flow-arrow"></i>
-            <div class="flow-card">
-              <b>Decisión</b>
-              <span>Responsable, criterio, riesgo y aprobación humana.</span>
-              <em></em>
+            <div class="ops-main">
+              <div class="pipeline-row active">
+                <span>01</span>
+                <b>Lead entra desde email</b>
+                <em>Responsable asignado</em>
+              </div>
+              <div class="pipeline-row">
+                <span>02</span>
+                <b>Datos cruzados con CRM</b>
+                <em>Duplicidad detectada</em>
+              </div>
+              <div class="pipeline-row">
+                <span>03</span>
+                <b>Riesgo y permiso revisados</b>
+                <em>Aprobación humana</em>
+              </div>
+              <div class="pipeline-row">
+                <span>04</span>
+                <b>Acción y reporte preparados</b>
+                <em>Métrica trazada</em>
+              </div>
             </div>
-            <i class="flow-arrow"></i>
-            <div class="flow-card">
-              <b>Sistema</b>
-              <span>Automatización, panel o asistente con límites claros.</span>
-              <em></em>
+          </div>
+          <div class="decision-strip">
+            <div>
+              <span>Automatizar</span>
+              <b>seguimiento</b>
+            </div>
+            <div>
+              <span>Mantener humano</span>
+              <b>compromisos</b>
+            </div>
+            <div>
+              <span>Medir</span>
+              <b>tiempo recuperado</b>
             </div>
           </div>
           <div class="signal-grid">
@@ -177,10 +211,10 @@
     <section id="metodo" class="band">
       <div class="wrap">
         <div class="section-head centered">
-          <p class="kicker">Método Lumus</p>
-          <h2>Procesos claros antes que herramientas.</h2>
-          <p>Convertimos una operación dispersa en una secuencia de decisiones: entender, priorizar, construir y mantener.</p>
-        </div>
+              <p class="kicker">Método Lumus</p>
+              <h2>Una progresión clara: diagnosticar, priorizar, construir y medir.</h2>
+              <p>La página ahora se mueve como trabaja Lumus: cada paso convierte señales dispersas en una decisión operativa.</p>
+            </div>
         <div class="method-map">
           <article><span>01</span><h3>Proceso actual</h3><p>Entradas, responsables, herramientas y pasos reales.</p></article>
           <article><span>02</span><h3>Fricciones</h3><p>Dónde se pierde tiempo, seguimiento o visibilidad.</p></article>
@@ -260,11 +294,33 @@
           <h2>Dónde suele aparecer valor.</h2>
           <p>Estos escenarios no son casos cerrados: son patrones frecuentes donde una revisión operativa suele descubrir oportunidades reales.</p>
         </div>
-        <div class="scenario-grid">
-          <article class="card"><h3>Clínicas y centros dentales</h3><p>Solicitudes, llamadas y citas pasan de memoria y WhatsApp a flujo visible con estado, responsable y seguimiento.</p></article>
-          <article class="card"><h3>Asesorías y despachos</h3><p>Documentos, solicitudes y recordatorios se ordenan en un sistema con trazabilidad y asistente privado si procede.</p></article>
-          <article class="card"><h3>Agencias y servicios B2B</h3><p>Leads, propuestas, reporting y entregables dejan de depender de persecución manual.</p></article>
-          <article class="card"><h3>Equipos comerciales</h3><p>Integración de CRM, email y hojas de cálculo para no perder próximas acciones, avisos o información crítica.</p></article>
+        <div class="scenario-tabs" data-tabs>
+          <div class="tab-buttons" role="tablist" aria-label="Escenarios habituales">
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-tab="clinicas">Clínicas</button>
+            <button type="button" role="tab" aria-selected="false" data-tab="asesorias">Asesorías</button>
+            <button type="button" role="tab" aria-selected="false" data-tab="agencias">Agencias</button>
+            <button type="button" role="tab" aria-selected="false" data-tab="comercial">Comercial</button>
+          </div>
+          <div class="tab-panel is-active" data-panel="clinicas">
+            <h3>Clínicas y centros dentales</h3>
+            <p>Solicitudes, llamadas y citas pasan de memoria y WhatsApp a flujo visible con estado, responsable y seguimiento.</p>
+            <ul><li>Entrada multicanal ordenada</li><li>Recordatorios con propietario claro</li><li>Panel de demanda y bloqueos</li></ul>
+          </div>
+          <div class="tab-panel" data-panel="asesorias">
+            <h3>Asesorías y despachos</h3>
+            <p>Documentos, solicitudes y recordatorios se ordenan en un sistema con trazabilidad y asistente privado si procede.</p>
+            <ul><li>Checklist documental</li><li>Alertas por vencimiento</li><li>IA privada sobre procedimientos internos</li></ul>
+          </div>
+          <div class="tab-panel" data-panel="agencias">
+            <h3>Agencias y servicios B2B</h3>
+            <p>Leads, propuestas, reporting y entregables dejan de depender de persecución manual.</p>
+            <ul><li>Estado por cliente</li><li>Reporting recurrente</li><li>Seguimiento de entregables</li></ul>
+          </div>
+          <div class="tab-panel" data-panel="comercial">
+            <h3>Equipos comerciales</h3>
+            <p>Integración de CRM, email y hojas de cálculo para no perder próximas acciones, avisos o información crítica.</p>
+            <ul><li>Próxima acción visible</li><li>Datos sincronizados</li><li>Alertas de oportunidad y riesgo</li></ul>
+          </div>
         </div>
       </div>
     </section>
@@ -383,7 +439,7 @@
           <p class="kicker">Siguiente paso</p>
           <h2>Cuéntanos qué proceso te está frenando.</h2>
           <p>Revisamos si hay una oportunidad real y te recomendamos el siguiente paso: mapa, diagnóstico, piloto o no actuar todavía.</p>
-          <p class="contact-note">Canal provisional hasta configurar formulario propio o CRM definitivo.</p>
+          <p class="contact-note">Respuesta directa para revisar encaje, alcance y siguiente paso sin compromiso.</p>
         </div>
         <div class="cta-actions">
           <a class="btn primary" href="mailto:info@lumussystems.com?subject=Revisi%C3%B3n%20operativa%20Lumus%20Systems&body=Hola%20Lumus%2C%0A%0AQueremos%20revisar%20este%20proceso%3A%0A%0AHerramientas%20actuales%3A%0A%0AFricci%C3%B3n%20principal%3A%0A%0AObjetivo%20esperado%3A%0A">Solicitar revisión operativa</a>
@@ -395,12 +451,12 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <img class="footer-logo" src="assets/lumus-logo-v5-light.svg" alt="Lumus Systems">
+      <img class="footer-logo" src="assets/lumus-logo-ui.svg" width="1040" height="216" alt="Lumus Systems">
       <p>Sistemas inteligentes para operar mejor.</p>
       <p class="legal"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
