@@ -1,8 +1,7 @@
-<svg width="1500" height="360" viewBox="0 0 1500 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1172" height="216" viewBox="0 0 1172 216" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Lumus Systems logo light</title>
-  <desc id="desc">Logo horizontal de Lumus Systems para fondos claros.</desc>
-  <rect width="1500" height="360" fill="#F4F1E8"/>
-  <g transform="translate(96 72)">
+  <desc id="desc">Logo horizontal transparente de Lumus Systems para fondos claros.</desc>
+  <g transform="translate(0 0)">
     <rect width="216" height="216" rx="44" fill="#080A0D"/>
     <path d="M55 50H84V135H144V164H55V50Z" fill="#F4F1E8"/>
     <rect x="84" y="135" width="32" height="29" fill="#D6A84F"/>
@@ -10,7 +9,7 @@
     <circle cx="162" cy="67" r="7" fill="#D6A84F"/>
     <path d="M139 67H154" stroke="#D6A84F" stroke-width="5" stroke-linecap="round"/>
   </g>
-  <g transform="translate(360 104)">
+  <g transform="translate(264 32)">
     <text x="0" y="98" fill="#111418" font-family="Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="116" font-weight="640" letter-spacing="-6.8">Lumus</text>
     <text x="363" y="98" fill="#303943" font-family="Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="86" font-weight="540" letter-spacing="-4.2">Systems</text>
     <text x="2" y="154" fill="#1F6F6B" font-family="Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2.6">SISTEMAS INTELIGENTES PARA OPERAR MEJOR</text>
