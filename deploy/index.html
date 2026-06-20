@@ -11,19 +11,32 @@
   <meta property="og:title" content="Lumus Systems · Automatización operativa e IA práctica">
   <meta property="og:description" content="Procesos claros antes que herramientas. Diagnóstico, automatización e IA aplicada con control humano.">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
   <meta property="og:url" content="https://lumussystems.com/">
   <meta property="og:image" content="https://lumussystems.com/assets/lumus-og-image-v1.png">
+  <meta property="og:image:alt" content="Lumus Systems: sistemas inteligentes para operar mejor">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lumus Systems · Sistemas inteligentes para operar mejor">
   <meta name="twitter:description" content="Consultoría de automatización operativa e IA práctica para empresas B2B.">
+  <meta name="twitter:image" content="https://lumussystems.com/assets/lumus-og-image-v1.png">
   <link rel="icon" type="image/svg+xml" href="assets/lumus-symbol-v5-light.svg">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://lumussystems.com/#webpage",
+        "url": "https://lumussystems.com/",
+        "name": "Sistemas inteligentes para operar mejor",
+        "description": "Lumus Systems ayuda a empresas B2B a ordenar procesos, detectar oportunidades reales de automatización y construir sistemas mantenibles con IA cuando aporta valor.",
+        "isPartOf": { "@id": "https://lumussystems.com/#website" },
+        "about": { "@id": "https://lumussystems.com/#service" },
+        "inLanguage": "es"
+      },
       {
         "@type": "Organization",
         "@id": "https://lumussystems.com/#organization",
@@ -47,6 +60,37 @@
         ]
       },
       {
+        "@type": "OfferCatalog",
+        "@id": "https://lumussystems.com/#offer-catalog",
+        "name": "Primeros pasos Lumus Systems",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chequeo operativo IA",
+              "description": "Revisión breve para entender fricción, herramientas, responsable interno y encaje antes de automatizar."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mapa de Automatización Express",
+              "description": "Mapa de un flujo concreto, matriz de oportunidades y primer ciclo sugerido."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diagnóstico de automatización operativa",
+              "description": "Diagnóstico para casos con varias áreas, más riesgo o poca claridad operativa."
+            }
+          }
+        ]
+      },
+      {
         "@type": "WebSite",
         "@id": "https://lumussystems.com/#website",
         "url": "https://lumussystems.com/",
@@ -60,7 +104,7 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Lumus Systems implementa herramientas concretas?",
+            "name": "¿Implementáis herramientas concretas?",
             "acceptedAnswer": { "@type": "Answer", "text": "Sí, pero la herramienta se elige después de entender el proceso, los datos, los permisos y el mantenimiento necesario." }
           },
           {
@@ -72,6 +116,21 @@
             "@type": "Question",
             "name": "¿Usáis IA siempre?",
             "acceptedAnswer": { "@type": "Answer", "text": "No. La IA entra cuando aporta valor real dentro de un proceso bien definido y con control humano." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál es el primer paso?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Empezamos con un chequeo operativo IA para entender fricción, herramientas y encaje. Si hay oportunidad clara, recomendamos mapa express, diagnóstico completo o primer ciclo de implementación." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo no conviene automatizar?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No conviene automatizar cuando el proceso cambia cada semana, no hay responsable para validar reglas o la fricción todavía no está suficientemente entendida." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Publicáis importes cerrados?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No como promesa universal. El alcance depende del proceso, la calidad de datos, las integraciones, los permisos y el mantenimiento esperado." }
           }
         ]
       }
@@ -85,20 +144,21 @@
   <nav class="nav" aria-label="Navegación principal">
     <div class="wrap nav-inner">
       <a class="brand" href="#contenido" aria-label="Lumus Systems">
-        <img class="brand-logo" src="assets/lumus-logo-ui.svg" width="1040" height="216" alt="Lumus Systems">
+        <img class="brand-logo" src="assets/lumus-logo-v5-light.svg" alt="Lumus Systems">
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
         <span></span><span></span><span></span>
-        <span class="sr-only menu-label">Abrir menú</span>
+        <span class="sr-only">Abrir menú</span>
       </button>
       <div class="nav-links" id="nav-menu">
         <a href="#problema">Problema</a>
+        <a href="#primer-paso">Primer paso</a>
+        <a href="#entregables">Entregables</a>
         <a href="#metodo">Método</a>
         <a href="#servicios">Servicios</a>
-        <a href="#recursos">Recursos</a>
         <a href="#casos">Escenarios</a>
         <a href="#faq">FAQ</a>
-        <a class="btn primary" href="#contacto">Solicitar revisión operativa</a>
+        <a class="btn primary" href="#contacto" data-track="nav-cta">Solicitar chequeo operativo IA</a>
       </div>
     </div>
   </nav>
@@ -107,73 +167,45 @@
     <header class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="desktop-copy">Consultoría de automatización operativa e IA práctica</span><span class="mobile-copy">Automatización operativa e IA práctica</span></p>
-          <h1>Convierte procesos dispersos en sistemas que avanzan solos.</h1>
-          <p class="lead">Lumus diseña automatizaciones, asistentes privados y paneles operativos a partir del trabajo real: entradas, decisiones, responsables, permisos y métricas.</p>
+          <p class="eyebrow"><span class="desktop-copy">Socio operativo de sistemas inteligentes</span><span class="mobile-copy">Sistemas inteligentes para empresas</span></p>
+          <h1>Sistemas inteligentes para operar mejor.</h1>
+          <p class="lead">Ayudamos a empresas B2B de servicios a ordenar procesos, reducir seguimiento manual y decidir qué automatizar primero con IA práctica solo cuando aporta valor real.</p>
           <div class="actions">
-            <a class="btn primary" href="#contacto">Solicitar revisión operativa</a>
-            <a class="btn secondary" href="#metodo">Ver cómo trabajamos</a>
+            <a class="btn primary" href="#contacto" data-track="hero-primary">Solicitar chequeo operativo IA</a>
+            <a class="btn secondary" href="#primer-paso" data-track="hero-secondary">Ver qué recibes</a>
           </div>
-          <div class="proof-row" aria-label="Entregables Lumus">
-            <span>Mapa operativo</span>
-            <span>Matriz de oportunidades</span>
-            <span>Primer sprint</span>
-          </div>
-          <p class="micro">Primero revisamos si hay una oportunidad real. Después recomendamos mapa, diagnóstico, piloto o no actuar todavía según claridad, impacto y riesgo.</p>
+          <p class="micro">La IA es el medio. Operar mejor es el objetivo. En la primera revisión vemos si merece la pena automatizar, qué flujo atacar y qué no tocar todavía.</p>
         </div>
-        <aside class="hero-system" aria-label="Simulación de una consola operativa Lumus">
+        <aside class="hero-system" aria-label="Simulación de un mapa operativo Lumus">
           <div class="system-top">
             <div>
-              <span>Consola operativa</span>
-              <strong>Entrada · decisión · sistema · medición</strong>
+              <span>Mapa operativo</span>
+              <strong>Chequeo · mapa express · primer ciclo</strong>
             </div>
-            <p class="live-chip"><i></i> Flujo en revisión</p>
+            <p class="live-chip"><i></i> Analizando flujo</p>
           </div>
-          <div class="system-brand" aria-hidden="true">
-            <img src="assets/lumus-symbol-v5-light.svg" width="512" height="512" alt="">
-            <span>Lumus transforma señales dispersas en trabajo trazable</span>
-          </div>
-          <div class="ops-console">
-            <div class="ops-main">
-              <div class="pipeline-row active">
-                <span>01</span>
-                <b>Lead entra desde email</b>
-                <em>Responsable asignado</em>
-              </div>
-              <div class="pipeline-row">
-                <span>02</span>
-                <b>Datos cruzados con CRM</b>
-                <em>Duplicidad detectada</em>
-              </div>
-              <div class="pipeline-row">
-                <span>03</span>
-                <b>Riesgo y permiso revisados</b>
-                <em>Aprobación humana</em>
-              </div>
-              <div class="pipeline-row">
-                <span>04</span>
-                <b>Acción y reporte preparados</b>
-                <em>Métrica trazada</em>
-              </div>
+          <div class="flow-board">
+            <div class="flow-card">
+              <b>Entrada</b>
+              <span>CRM, email, hojas y conversaciones dispersas.</span>
+              <em></em>
             </div>
-          </div>
-          <div class="decision-strip">
-            <div>
-              <span>Automatizar</span>
-              <b>seguimiento</b>
+            <i class="flow-arrow"></i>
+            <div class="flow-card">
+              <b>Decisión</b>
+              <span>Responsable, criterio, riesgo y aprobación humana.</span>
+              <em></em>
             </div>
-            <div>
-              <span>Mantener humano</span>
-              <b>compromisos</b>
-            </div>
-            <div>
-              <span>Medir</span>
-              <b>tiempo recuperado</b>
+            <i class="flow-arrow"></i>
+            <div class="flow-card">
+              <b>Sistema</b>
+              <span>Automatización, panel o asistente con límites claros.</span>
+              <em></em>
             </div>
           </div>
           <div class="signal-grid">
             <div><span>Oportunidades</span><b>5</b><small>priorizadas por impacto y riesgo</small></div>
-            <div><span>Primer sprint</span><b>30 días</b><small>mejora acotada antes de escalar</small></div>
+            <div><span>Primer ciclo</span><b>2-4 días</b><small>mapa express antes de invertir fuerte</small></div>
           </div>
           <div class="system-bottom">
             <div class="radar-card"><b>Fricciones detectadas</b><span>Duplicidad, reportes manuales y datos sin propietario claro.</span></div>
@@ -202,18 +234,120 @@
       </div>
     </section>
 
+    <section id="primer-paso" class="band">
+      <div class="wrap">
+        <div class="section-head centered">
+          <p class="kicker">Primer paso</p>
+          <h2>Empieza por saber qué merece la pena automatizar.</h2>
+          <p>No todas las empresas necesitan lo mismo. Empezamos con el nivel justo de revisión para convertir una fricción operativa en una decisión clara.</p>
+        </div>
+        <div class="entry-grid">
+          <article class="entry-card">
+            <span>20 min</span>
+            <h3>Chequeo operativo IA</h3>
+            <p>Llamada breve para revisar fricción, herramientas actuales, responsable interno y encaje real antes de proponer nada.</p>
+            <strong>Salida: recomendación go/no-go y siguiente paso.</strong>
+          </article>
+          <article class="entry-card featured">
+            <span>2-4 días</span>
+            <h3>Mapa de Automatización Express</h3>
+            <p>Mapeamos un flujo concreto, detectamos tareas repetitivas, riesgos, dependencias y oportunidades de mejora.</p>
+            <strong>Salida: mapa operativo, matriz priorizada y primer ciclo sugerido.</strong>
+          </article>
+          <article class="entry-card">
+            <span>1-2 semanas</span>
+            <h3>Diagnóstico de automatización operativa</h3>
+            <p>Para casos con varias áreas, más riesgo, datos dispersos o poca claridad sobre qué proceso atacar primero.</p>
+            <strong>Salida: diagnóstico completo y roadmap 30-60-90.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="entregables">
+      <div class="wrap deliverable-grid">
+        <div class="section-head">
+          <p class="kicker">Qué recibes</p>
+          <h2>Artefactos para decidir, no una charla abstracta.</h2>
+          <p>El mapa o diagnóstico deja una base práctica para decidir si conviene implementar, qué construir primero, qué riesgos vigilar y qué no automatizar todavía.</p>
+          <div class="inline-actions">
+            <a class="btn primary" href="#contacto" data-track="deliverables-cta">Solicitar chequeo operativo IA</a>
+            <a class="btn secondary" href="#ejemplo-mapa" data-track="deliverables-secondary">Ver ejemplo de mapa</a>
+          </div>
+        </div>
+        <div class="deliverables">
+          <article class="card"><h3>Mapa de proceso</h3><p>Flujos, herramientas, responsables, datos, fricciones y puntos de pérdida.</p></article>
+          <article class="card"><h3>Matriz de oportunidades</h3><p>Priorización por impacto, dificultad, riesgo, calidad de datos y adopción interna.</p></article>
+          <article class="card"><h3>Roadmap 30-60-90</h3><p>Quick wins, primer ciclo y siguientes mejoras sin sobredimensionar la solución.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ejemplo-mapa" class="band">
+      <div class="wrap example-grid">
+        <div class="section-head">
+          <p class="kicker">Ejemplo simulado</p>
+          <h2>Así se ve una decisión operativa cuando deja de estar dispersa.</h2>
+          <p>El ejemplo es ficticio, pero muestra el tipo de salida que buscamos: situación actual, fricciones, oportunidades, riesgo y siguiente acción.</p>
+        </div>
+        <div class="map-preview" aria-label="Ejemplo simulado de mapa de automatización">
+          <div class="preview-row preview-head">
+            <span>Flujo</span>
+            <strong>Seguimiento comercial B2B</strong>
+            <em>Riesgo medio</em>
+          </div>
+          <div class="preview-lanes">
+            <article><span>Entrada</span><b>Lead llega por web o email</b><small>Fuente sin normalizar</small></article>
+            <article><span>Fricción</span><b>Próxima acción depende de memoria</b><small>Alto coste de oportunidad</small></article>
+            <article><span>Sistema</span><b>CRM + recordatorio + reporte semanal</b><small>Automatización acotada</small></article>
+          </div>
+          <table class="opportunity-table">
+            <caption>Matriz simulada de oportunidades</caption>
+            <thead>
+              <tr>
+                <th scope="col">Oportunidad</th>
+                <th scope="col">Impacto</th>
+                <th scope="col">Esfuerzo</th>
+                <th scope="col">Siguiente acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Recordatorios de follow-up</th>
+                <td data-label="Impacto">Alto</td>
+                <td data-label="Esfuerzo">Bajo</td>
+                <td data-label="Siguiente acción">Prototipo</td>
+              </tr>
+              <tr>
+                <th scope="row">Reporte semanal comercial</th>
+                <td data-label="Impacto">Medio</td>
+                <td data-label="Esfuerzo">Bajo</td>
+                <td data-label="Siguiente acción">Mapa express</td>
+              </tr>
+              <tr>
+                <th scope="row">Asistente de respuestas</th>
+                <td data-label="Impacto">Medio</td>
+                <td data-label="Esfuerzo">Medio</td>
+                <td data-label="Siguiente acción">Esperar fuentes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="metodo" class="band">
       <div class="wrap">
         <div class="section-head centered">
-              <p class="kicker">Método Lumus</p>
-              <h2>Una progresión clara: diagnosticar, priorizar, construir y medir.</h2>
-              <p>La página ahora se mueve como trabaja Lumus: cada paso convierte señales dispersas en una decisión operativa.</p>
-            </div>
+          <p class="kicker">Método Lumus</p>
+          <h2>Procesos claros antes que herramientas.</h2>
+          <p>Convertimos una operación dispersa en una secuencia de decisiones: entender, priorizar, construir y mantener.</p>
+        </div>
         <div class="method-map">
           <article><span>01</span><h3>Proceso actual</h3><p>Entradas, responsables, herramientas y pasos reales.</p></article>
           <article><span>02</span><h3>Fricciones</h3><p>Dónde se pierde tiempo, seguimiento o visibilidad.</p></article>
           <article><span>03</span><h3>Oportunidades</h3><p>Qué automatizar, ordenar o dejar igual por ahora.</p></article>
-          <article><span>04</span><h3>Primer sprint</h3><p>Una mejora acotada, medible cuando haya datos y segura.</p></article>
+          <article><span>04</span><h3>Primer ciclo</h3><p>Una mejora acotada, medible cuando haya datos y segura.</p></article>
         </div>
       </div>
     </section>
@@ -222,8 +356,8 @@
       <div class="wrap">
         <div class="section-head">
           <p class="kicker">Servicios</p>
-          <h2>Cuatro rutas para operar mejor sin convertirlo en una transformación interminable.</h2>
-          <p>Cada ruta explica cuándo encaja, qué problema resuelve y qué resultado deja. La propuesta económica se define después de entender alcance, datos, riesgo y mantenimiento.</p>
+          <h2>Después del mapa, cuatro rutas para operar mejor.</h2>
+          <p>Los servicios no son el punto de partida automático. Son la escalera posterior cuando el mapa confirma qué problema merece implementación.</p>
         </div>
         <div class="services">
           <article class="service-card featured">
@@ -266,55 +400,18 @@
       </div>
     </section>
 
-    <section class="band">
-      <div class="wrap deliverable-grid">
-        <div class="section-head">
-          <p class="kicker">Qué recibes</p>
-          <h2>Artefactos para decidir, no una charla abstracta.</h2>
-          <p>El diagnóstico deja una base práctica para decidir si conviene implementar, qué construir primero y qué riesgos vigilar.</p>
-        </div>
-        <div class="deliverables">
-          <article class="card"><h3>Mapa de proceso</h3><p>Flujos, herramientas, responsables, datos, fricciones y puntos de pérdida.</p></article>
-          <article class="card"><h3>Matriz de oportunidades</h3><p>Priorización por impacto, dificultad, riesgo, calidad de datos y adopción interna.</p></article>
-          <article class="card"><h3>Roadmap 30-60-90</h3><p>Quick wins, primer sprint y siguientes mejoras sin sobredimensionar la solución.</p></article>
-        </div>
-      </div>
-    </section>
-
     <section id="casos">
       <div class="wrap">
         <div class="section-head">
           <p class="kicker">Escenarios habituales</p>
           <h2>Dónde suele aparecer valor.</h2>
-          <p>Estos escenarios no son casos cerrados: son patrones frecuentes donde una revisión operativa suele descubrir oportunidades reales.</p>
+          <p>Estos escenarios no son casos cerrados: son patrones frecuentes donde un chequeo operativo suele descubrir oportunidades reales.</p>
         </div>
-        <div class="scenario-tabs" data-tabs>
-          <div class="tab-buttons" role="tablist" aria-label="Escenarios habituales">
-            <button class="is-active" type="button" role="tab" aria-selected="true" data-tab="clinicas">Clínicas</button>
-            <button type="button" role="tab" aria-selected="false" data-tab="asesorias">Asesorías</button>
-            <button type="button" role="tab" aria-selected="false" data-tab="agencias">Agencias</button>
-            <button type="button" role="tab" aria-selected="false" data-tab="comercial">Comercial</button>
-          </div>
-          <div class="tab-panel is-active" data-panel="clinicas">
-            <h3>Clínicas y centros dentales</h3>
-            <p>Solicitudes, llamadas y citas pasan de memoria y WhatsApp a flujo visible con estado, responsable y seguimiento.</p>
-            <ul><li>Entrada multicanal ordenada</li><li>Recordatorios con propietario claro</li><li>Panel de demanda y bloqueos</li></ul>
-          </div>
-          <div class="tab-panel" data-panel="asesorias">
-            <h3>Asesorías y despachos</h3>
-            <p>Documentos, solicitudes y recordatorios se ordenan en un sistema con trazabilidad y asistente privado si procede.</p>
-            <ul><li>Checklist documental</li><li>Alertas por vencimiento</li><li>IA privada sobre procedimientos internos</li></ul>
-          </div>
-          <div class="tab-panel" data-panel="agencias">
-            <h3>Agencias y servicios B2B</h3>
-            <p>Leads, propuestas, reporting y entregables dejan de depender de persecución manual.</p>
-            <ul><li>Estado por cliente</li><li>Reporting recurrente</li><li>Seguimiento de entregables</li></ul>
-          </div>
-          <div class="tab-panel" data-panel="comercial">
-            <h3>Equipos comerciales</h3>
-            <p>Integración de CRM, email y hojas de cálculo para no perder próximas acciones, avisos o información crítica.</p>
-            <ul><li>Próxima acción visible</li><li>Datos sincronizados</li><li>Alertas de oportunidad y riesgo</li></ul>
-          </div>
+        <div class="scenario-grid">
+          <article class="card"><h3>Clínicas y centros dentales</h3><p><strong>Antes:</strong> llamadas, WhatsApp y agenda manual. <strong>Después:</strong> flujo visible con estado, responsable, derivación humana y métricas de respuesta.</p></article>
+          <article class="card"><h3>Asesorías y despachos</h3><p><strong>Antes:</strong> documentos y recordatorios dispersos. <strong>Después:</strong> sistema con trazabilidad y asistente privado si existen fuentes fiables.</p></article>
+          <article class="card"><h3>Agencias y servicios B2B</h3><p><strong>Antes:</strong> leads, propuestas y entregables por persecución manual. <strong>Después:</strong> pipeline, alertas y reporting semanal para dirección.</p></article>
+          <article class="card"><h3>Equipos comerciales</h3><p><strong>Antes:</strong> CRM, email y hojas sin continuidad. <strong>Después:</strong> próximas acciones, avisos y contexto crítico conectados.</p></article>
         </div>
       </div>
     </section>
@@ -324,7 +421,7 @@
         <div class="section-head">
           <p class="kicker">Guías por necesidad</p>
           <h2>Recursos para entender qué automatizar primero.</h2>
-          <p>Estas páginas profundizan en los problemas más comunes antes de pedir una revisión operativa.</p>
+          <p>Estas páginas profundizan en los problemas más comunes antes de pedir un chequeo operativo IA.</p>
         </div>
         <div class="resource-grid">
           <a class="resource-card" href="diagnostico-automatizacion-operativa/">
@@ -361,12 +458,12 @@
         <div>
           <p class="kicker">Seguridad operativa</p>
           <h2>IA con control humano, permisos y trazabilidad.</h2>
-          <p>Trabajamos con procesos y datos de negocio. Por eso cada sistema se diseña con límites claros desde el inicio.</p>
+          <p>No somos una agencia de IA ni vendemos bots genéricos. Trabajamos con procesos y datos de negocio; por eso cada sistema se diseña con límites claros desde el inicio.</p>
         </div>
         <div class="trust-cards">
-          <article><h3>Humano en decisiones sensibles</h3><p>Nada de envíos, publicaciones o cambios críticos sin aprobación.</p></article>
-          <article><h3>Mínimo acceso necesario</h3><p>Primero lectura y prueba controlada; escritura solo cuando tenga sentido.</p></article>
-          <article><h3>Documentación y mantenimiento</h3><p>Lo importante queda trazado para poder mantener y mejorar el sistema.</p></article>
+          <article><span aria-hidden="true">✓</span><h3>Humano en decisiones sensibles</h3><p>Nada de envíos, publicaciones o cambios críticos sin aprobación.</p></article>
+          <article><span aria-hidden="true">↧</span><h3>Mínimo acceso necesario</h3><p>Primero lectura y prueba controlada; escritura solo cuando tenga sentido.</p></article>
+          <article><span aria-hidden="true">□</span><h3>Documentación y mantenimiento</h3><p>Lo importante queda trazado para poder mantener y mejorar el sistema.</p></article>
         </div>
       </div>
     </section>
@@ -382,6 +479,7 @@
             <li>Queréis usar IA, pero aplicada a procesos reales.</li>
             <li>Preferís decidir con diagnóstico antes de invertir fuerte.</li>
           </ul>
+          <p class="fit-note">Si reconoces dos o más señales, probablemente el chequeo tiene sentido.</p>
         </article>
         <article>
           <p class="kicker">Descarte honesto</p>
@@ -417,11 +515,15 @@
           </details>
           <details>
             <summary>¿Cuál es el primer paso?</summary>
-            <p>Cuéntanos qué proceso te está frenando. Revisamos si hay una oportunidad real y recomendamos mapa, diagnóstico, piloto o no actuar todavía.</p>
+            <p>Cuéntanos qué proceso te está frenando. Revisamos si conviene hacer un chequeo, un mapa express, un diagnóstico completo o no automatizar todavía.</p>
+          </details>
+          <details>
+            <summary>¿Cuándo no conviene automatizar?</summary>
+            <p>Cuando el proceso cambia cada semana, no hay responsable para validar reglas o la fricción todavía no está clara. En esos casos recomendamos ordenar antes de automatizar.</p>
           </details>
           <details>
             <summary>¿Publicáis importes cerrados?</summary>
-            <p>No. El alcance depende del proceso, la calidad de datos, las integraciones, los permisos y el mantenimiento esperado. Primero revisamos encaje; después se propone el formato adecuado.</p>
+            <p>No como promesa universal. El alcance depende del proceso, la calidad de datos, las integraciones, los permisos y el mantenimiento esperado. Primero revisamos encaje; después se propone el formato adecuado.</p>
           </details>
         </div>
       </div>
@@ -432,25 +534,49 @@
         <div>
           <p class="kicker">Siguiente paso</p>
           <h2>Cuéntanos qué proceso te está frenando.</h2>
-          <p>Revisamos si hay una oportunidad real y te recomendamos el siguiente paso: mapa, diagnóstico, piloto o no actuar todavía.</p>
-          <p class="contact-note">Respuesta directa para revisar encaje, alcance y siguiente paso sin compromiso.</p>
+          <p>Revisamos si conviene hacer un chequeo, un mapa express, un diagnóstico completo o no automatizar todavía.</p>
+          <p class="contact-note">Primera respuesta por email. No necesitamos acceso a herramientas para valorar encaje inicial.</p>
         </div>
-        <div class="cta-actions">
-          <a class="btn primary" href="mailto:info@lumussystems.com?subject=Revisi%C3%B3n%20operativa%20Lumus%20Systems&body=Hola%20Lumus%2C%0A%0AQueremos%20revisar%20este%20proceso%3A%0A%0AHerramientas%20actuales%3A%0A%0AFricci%C3%B3n%20principal%3A%0A%0AObjetivo%20esperado%3A%0A">Solicitar revisión operativa</a>
-          <a class="btn secondary" href="#servicios">Ver rutas de trabajo</a>
-        </div>
+        <form class="contact-form" name="chequeo-operativo-ia" method="post" action="gracias.html" data-netlify="true" netlify-honeypot="empresa-web">
+          <input type="hidden" name="form-name" value="chequeo-operativo-ia">
+          <p class="hidden-field">
+            <label>Empresa web <input name="empresa-web" tabindex="-1" autocomplete="off"></label>
+          </p>
+          <label>
+            Nombre y empresa
+            <input name="nombre" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            Proceso a revisar
+            <textarea name="proceso" rows="4" required placeholder="Ej. seguimiento comercial, reporting semanal, solicitudes de clientes..."></textarea>
+          </label>
+          <label class="privacy-check">
+            <input type="checkbox" name="privacidad" required>
+            <span>Acepto que Lumus Systems use estos datos para responder a esta solicitud. <a href="privacidad.html">Ver privacidad</a>.</span>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit" data-track="final-form-submit">Solicitar chequeo operativo IA</button>
+            <a class="btn secondary" href="mailto:info@lumussystems.com?subject=Chequeo%20operativo%20IA%20Lumus%20Systems&body=Hola%20Lumus%2C%0A%0AQueremos%20solicitar%20un%20chequeo%20operativo%20IA.%0A%0AProceso%20a%20revisar%3A%0A%0AHerramientas%20actuales%3A%0A%0AFricci%C3%B3n%20principal%3A%0A%0AObjetivo%20esperado%3A%0A%0AResponsable%20interno%20para%20validar%20reglas%3A%0A" aria-label="Enviar email para solicitar un chequeo operativo IA" data-track="final-mailto">Prefiero email</a>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
+  <a class="mobile-sticky-cta is-hidden" href="#contacto" data-track="mobile-sticky">Solicitar chequeo operativo IA</a>
+
   <footer>
     <div class="wrap footer-inner">
-      <img class="footer-logo" src="assets/lumus-logo-ui.svg" width="1040" height="216" alt="Lumus Systems">
+      <img class="footer-logo" src="assets/lumus-logo-v5-light.svg" alt="Lumus Systems">
       <p>Sistemas inteligentes para operar mejor.</p>
       <p class="legal"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a></p>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
