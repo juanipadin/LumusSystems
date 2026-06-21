@@ -522,6 +522,44 @@ h3 {
 }
 
 section { padding: 72px 0; }
+.proof-strip {
+  padding: 0 0 48px;
+}
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.proof-grid article {
+  min-height: 152px;
+  padding: 20px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .54);
+}
+.proof-grid span,
+.case-summary span,
+.case-card span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.proof-grid strong {
+  display: block;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.3;
+}
+.proof-grid p {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+}
 .band { background: var(--paper); border-block: 1px solid var(--rule); }
 .dark-band {
   background: var(--dark);
@@ -689,6 +727,24 @@ section { padding: 72px 0; }
   font-style: normal;
   font-weight: 800;
 }
+.case-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.case-summary article {
+  min-height: 116px;
+  padding: 16px;
+  border: 1px solid rgba(184, 134, 47, .26);
+  border-radius: 12px;
+  background: rgba(184, 134, 47, .08);
+}
+.case-summary b {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.35;
+}
 .preview-lanes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -749,6 +805,12 @@ section { padding: 72px 0; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+}
+.case-card {
+  min-height: 236px;
+}
+.case-card span {
+  margin-bottom: 12px;
 }
 .resource-grid {
   display: grid;
@@ -1009,7 +1071,7 @@ footer {
   .hero-grid, .split, .deliverable-grid, .example-grid, .trust-grid, .seo-layout, .legal-layout {
     grid-template-columns: 1fr;
   }
-  .scenario-grid, .method-map, .resource-grid, .entry-grid { grid-template-columns: repeat(2, 1fr); }
+  .scenario-grid, .method-map, .resource-grid, .entry-grid, .proof-grid { grid-template-columns: repeat(2, 1fr); }
   .seo-aside, .legal-aside { position: static; }
 }
 
@@ -1100,7 +1162,7 @@ footer {
   .radar-card {
     min-height: 136px;
   }
-  .method-map, .entry-grid, .services, .scenario-grid, .resource-grid, .fit, .cta {
+  .method-map, .entry-grid, .services, .scenario-grid, .resource-grid, .fit, .cta, .proof-grid, .case-summary {
     grid-template-columns: 1fr;
   }
   .preview-head,
