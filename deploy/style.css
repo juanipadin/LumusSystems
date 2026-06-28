@@ -289,9 +289,9 @@ h3 {
   pointer-events: none;
 }
 .system-top,
-.flow-board,
+.scope-list,
 .signal-grid,
-.system-bottom {
+.system-note {
   position: relative;
   z-index: 1;
 }
@@ -316,80 +316,58 @@ h3 {
   color: var(--ink);
   font-size: 14px;
 }
-.live-chip {
+.status-chip {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   margin: 0;
   padding: 6px 10px;
-  border: 1px solid rgba(31, 111, 107, .22);
+  border: 1px solid rgba(184, 134, 47, .26);
   border-radius: 999px;
-  background: rgba(31, 111, 107, .08);
-  color: var(--teal);
+  background: rgba(184, 134, 47, .10);
+  color: var(--accent-text);
   font-size: 12px;
   font-weight: 800;
   white-space: nowrap;
 }
-.live-chip i {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--teal);
-  box-shadow: 0 0 0 6px rgba(31, 111, 107, .10);
-  animation: livePulse 1.8s ease-out infinite;
-}
-.flow-board {
+.scope-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  align-items: center;
   margin: 22px 0 14px;
   padding: 16px;
   border: 1px solid var(--rule);
   border-radius: 16px;
   background: rgba(250, 247, 240, .72);
 }
-.flow-card {
-  min-height: 132px;
-  padding: 12px;
+.scope-list article {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
   border: 1px solid var(--rule);
   border-radius: 12px;
   background: var(--white);
 }
-.flow-card b,
-.flow-card span {
+.scope-list article > span {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(31, 111, 107, .10);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 900;
+}
+.scope-list b,
+.scope-list p {
   display: block;
 }
-.flow-card span {
-  margin-top: 6px;
+.scope-list p {
+  margin: 4px 0 0;
   color: var(--ink-soft);
   font-size: 13px;
   line-height: 1.4;
-}
-.flow-card em {
-  display: block;
-  height: 7px;
-  margin-top: 14px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--teal));
-  animation: flowScan 4.8s cubic-bezier(.16, 1, .3, 1) infinite;
-}
-.flow-arrow {
-  display: none;
-  height: 1px;
-  background: var(--rule);
-  position: relative;
-}
-.flow-arrow::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -4px;
-  width: 8px;
-  height: 8px;
-  border-top: 1px solid var(--rule);
-  border-right: 1px solid var(--rule);
-  transform: rotate(45deg);
 }
 .signal-grid {
   display: grid;
@@ -399,7 +377,8 @@ h3 {
 }
 .signal-grid div,
 .radar-card,
-.task-stack p {
+.task-stack p,
+.system-note {
   border: 1px solid var(--rule);
   border-radius: 12px;
   background: rgba(255, 255, 255, .72);
@@ -423,6 +402,15 @@ h3 {
   margin: 4px 0 2px;
   font-size: 28px;
   line-height: 1;
+}
+.system-note {
+  padding: 16px;
+}
+.system-note p {
+  margin: 6px 0 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.5;
 }
 .system-bottom {
   display: grid;
@@ -530,17 +518,6 @@ h3 {
   font-size: 12px;
 }
 .matrix-card b { display: block; margin: 2px 0; }
-
-@keyframes livePulse {
-  0% { transform: scale(.88); opacity: .72; }
-  70% { transform: scale(1.22); opacity: 1; }
-  100% { transform: scale(.88); opacity: .72; }
-}
-@keyframes flowScan {
-  0% { width: 24%; }
-  50% { width: 88%; }
-  100% { width: 32%; }
-}
 
 section { padding: 72px 0; }
 .proof-strip {
@@ -1207,49 +1184,23 @@ footer {
     min-height: 0;
     padding: 14px;
   }
-  .hero-system .system-bottom {
-    display: none;
-  }
-  .hero-system .flow-board {
-    margin-bottom: 0;
-  }
   .system-top {
     display: grid;
     gap: 10px;
   }
-  .live-chip {
+  .status-chip {
     width: max-content;
     max-width: 100%;
     white-space: normal;
   }
-  .flow-board,
-  .system-bottom {
-    grid-template-columns: 1fr;
-  }
-  .flow-board {
+  .scope-list {
     gap: 8px;
     padding: 12px;
   }
-  .flow-card {
-    min-height: 0;
-    padding: 10px;
-  }
-  .flow-card span {
-    font-size: 12px;
-  }
+  .scope-list article { padding: 10px; }
+  .scope-list p { font-size: 12px; }
   .signal-grid small {
     display: none;
-  }
-  .flow-arrow {
-    width: 1px;
-    height: 18px;
-    justify-self: center;
-  }
-  .flow-arrow::after {
-    right: -4px;
-    top: auto;
-    bottom: 0;
-    transform: rotate(135deg);
   }
   .signal-grid {
     grid-template-columns: 1fr;
